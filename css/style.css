@@ -11,11 +11,10 @@ body {
 }
 
 .logo{
-    height: 2em;
-    width: 2em;
+  background: url('../safari-pinned-tab.svg');
+    height: 1em;
+    width: 1em;
     display: block;
-     position: absolute;
-    margin-bottom: 0.5em;
     /* Other styles here */
 }
 
