@@ -1,0 +1,104 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
+html,
+body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+
+.offerings{
+  font-size: 0.8em;
+}
+
+.logo{
+    height: 2em;
+    width: 2em;
+    display: block;
+     position: absolute;
+    margin-bottom: 0.5em;
+    /* Other styles here */
+}
+
+.logo-1 {
+    background: url('../img/logo-1.ico');
+    color: white;
+      height:200px;
+    width: 100px;
+    display: block;
+
+    margin-bottom: 0.5em;
+    /* Other styles here */
+}
+
+.sidebar {
+  height: 100%;
+  width: 85px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: transparent linear-gradient(181deg, #4BDAF1 0%, #A74AF3 100%) 0% 0% no-repeat padding-box;
+  transition: 0.5s;
+  overflow-x: hidden;
+  padding-top: 60px;
+  white-space: nowrap;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+
+
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+main .sidebar {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.material-icons,
+.icon-text {
+  vertical-align: middle;
+  color: white;
+  font-weight: 400;
+}
+
+.material-icons {
+  padding-bottom: 3px;
+  margin-right: 30px;
+  /*font-size: 2em;*/
+}
+
+#main {
+  padding: 16px;
+  margin-left: 85px;
+  transition: margin-left 0.5s;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active{
+  color: black;
+  font-weight: 500;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 2em;
+  }
+}
