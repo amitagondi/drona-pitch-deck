@@ -1,4 +1,4 @@
-@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
 html,
 body {
   height: 100%;
@@ -49,13 +49,16 @@ body {
   font-size: 25px;
   color: white;
   display: block;
+  text-decoration: none;
 }
 
 
 
 .sidebar a:hover {
   color: #f1f1f1;
+  text-decoration: none;
 }
+
 
 main .sidebar {
   position: absolute;
@@ -78,11 +81,100 @@ main .sidebar {
   /*font-size: 2em;*/
 }
 
+/*Profile Card Start*/
+.profile-card-4 {
+    max-width: 300px;
+ /*   max-height: 300px;*/
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: absolute;
+    margin: 10px auto;
+    cursor: pointer;
+
+}
+
+.profile-card-4 img {
+    transition: all 0.25s linear;
+    max-height: 250px;
+}
+
+.profile-card-4 .profile-content {
+    position: relative;
+    background-color: #FFF;
+}
+
+.profile-card-4 .profile-name {
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -70px;
+    color: #FFF;
+    font-size: 17px;
+}
+
+.profile-card-4 .profile-name p {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.profile-card-4 .profile-description {
+    color: #777;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.profile-card-4 .profile-overview {
+    padding: 15px 0px;
+}
+
+.profile-card-4 .profile-overview p {
+    font-size: 10px;
+    font-weight: 600;
+    color: #777;
+}
+
+.profile-card-4 .profile-overview h4 {
+    color: #273751;
+    font-weight: bold;
+}
+
+.profile-card-4 .profile-content::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    top: -10px;
+    left: 0px;
+    right: 0px;
+    background-color: #FFF;
+    z-index: 0;
+    transform: skewY(3deg);
+}
+
+.profile-card-4:hover img {
+    filter: grayscale(100%);
+}
+
+.profile-card-4:hover .profile-name {
+    bottom: 80px;
+}
+
+.profile-card-4:hover .profile-username {
+    bottom: 60px;
+}
+
+.profile-card-4:hover .profile-icons {
+    right: 40px;
+}
+
+/*Profile Card end*/
+
 #main {
   padding: 16px;
-  margin-left: 85px;
   transition: margin-left 0.5s;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
