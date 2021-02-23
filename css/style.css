@@ -89,7 +89,7 @@ main .sidebar {
     border-radius: 5px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    position: absolute;
+    position: relative;
     margin: 10px auto;
     cursor: pointer;
 
@@ -97,7 +97,7 @@ main .sidebar {
 
 .profile-card-4 img {
     transition: all 0.25s linear;
-    max-height: 250px;
+    max-height: 220px;
 }
 
 .profile-card-4 .profile-content {
@@ -167,6 +167,94 @@ main .sidebar {
 }
 
 .profile-card-4:hover .profile-icons {
+    right: 40px;
+}
+
+.profile-card-4-mini {
+    max-width: 200px;
+ /*   max-height: 300px;*/
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+
+}
+
+.profile-card-4-mini img {
+    transition: all 0.25s linear;
+    max-height: 150px;
+}
+
+.profile-card-4-mini .profile-content-mini {
+    position: relative;
+    background-color: #FFF;
+}
+
+.profile-card-4-mini .profile-name-mini {
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -70px;
+    color: #FFF;
+    font-size: 17px;
+}
+
+.profile-card-4-mini .profile-name-mini p {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.profile-card-4-mini .profile-description-mini {
+    color: #777;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.profile-card-4-mini .profile-overview-mini {
+    padding: 15px 0px;
+}
+
+.profile-card-4-mini .profile-overview-mini p {
+    font-size: 10px;
+    font-weight: 600;
+    color: #777;
+}
+
+.profile-card-4-mini .profile-overview-mini h4 {
+    color: #273751;
+    font-weight: bold;
+}
+
+.profile-card-4-mini .profile-content-mini::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    top: -10px;
+    left: 0px;
+    right: 0px;
+    background-color: #FFF;
+    z-index: 0;
+    transform: skewY(3deg);
+}
+
+.profile-card-4-mini:hover img {
+    filter: grayscale(100%);
+}
+
+.profile-card-4-mini:hover .profile-name {
+    bottom: 80px;
+}
+
+.profile-card-4-mini:hover .profile-username {
+    bottom: 60px;
+}
+
+.profile-card-4-mini:hover .profile-icons {
     right: 40px;
 }
 
