@@ -2,7 +2,7 @@
   padding: 13px 20px;
   border-radius: 50%;
   background-color: #ED8D8D;
-  color: #fff;
+  color: rgb(255,255,255, 1);
   max-height: 50px;
   z-index: 2;
 }
