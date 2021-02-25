@@ -4,12 +4,16 @@ body {
   height: 100%;
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
+    background-color: rgba(248, 249, 245, 0.3);
 }
 
 .offerings{
   font-size: 0.8em;
 }
 
+.fa-angle-double-down:hover{
+  text-decoration: none;
+}
 .logo{
   background: url('../safari-pinned-tab.svg');
     height: 1em;
