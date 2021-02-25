@@ -388,7 +388,7 @@ td.BottomRight {
 #main {
   padding: 16px;
   transition: margin-left 0.5s;
-  display: flex;
+/*  display: flex;*/
   justify-content: center;
   align-items: center;
 }

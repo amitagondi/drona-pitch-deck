@@ -10,7 +10,7 @@ h1{
 line-height: 0.7em;}
 
 .pricing-card {
-  min-width: 300px;
+  min-width: 100px;
   border: none;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -26,8 +26,9 @@ line-height: 0.7em;}
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px); }
   .pricing-card .card-body {
-    padding-top: 55px;
-    padding-bottom: 62px; }
+    margin-top:10px;
+    padding-top: 45px;
+    padding-bottom: 22px; }
 
 .pricing-plan-title {
   font-size: 20px;
@@ -36,10 +37,16 @@ line-height: 0.7em;}
   font-weight: normal; }
 
 .pricing-plan-cost {
-  font-size: 50px;
+  font-size: 40px;
   color: #000;
   font-weight: bold;
   margin-bottom: 29px; }
+
+  .pricing-plan-cost-govt {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 11px;
+  font-weight: normal; }
 
 .pricing-plan-icon {
   display: inline-block;
@@ -61,7 +68,8 @@ line-height: 0.7em;}
   font-size: 14px;
   line-height: 2.14;
   margin-bottom: 35px;
-  color: #303132; }
+  color: #303132; 
+text-align: justify-all;}
 
 .pricing-plan-purchase-btn {
   color: #000;

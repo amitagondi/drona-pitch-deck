@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function () {
 	var inputs = $('.input');
 	var paras = $('.description-flex-container').find('p');
 	inputs.click(function(){
