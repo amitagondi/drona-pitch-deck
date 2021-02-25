@@ -4,77 +4,14 @@
   <meta charset="UTF-8">
   <title>Drona Tech - Pitch Deck</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/style.css">
+  
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Reenie+Beanie|Lato:700'>
-  <style type="text/css">
-    h2 {
-      font-weight: bold;
-      font-size: 2rem;
-    }
-    p {
-      font-family: 'Reenie Beanie';
-      font-size: 2rem;
-    }
-    ul,li{
-      list-style:none;
-    }
-    ul{
-      margin-bottom: 50em;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      position: absolute;
-      top:150px;
-    }
-    ul li a{
-      text-decoration:none;
-      color:#000;
-      background:#ffc;
-      display:block;
-      height:10em;
-      width:10em;
-      padding:1em;
-      box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-      transform: rotate(-6deg);
-      transition: transform .15s linear;
-    }
-
-    ul li:nth-child(even) a{
-      transform:rotate(4deg);
-      position:relative;
-      top:5px;
-      background:#cfc;
-    }
-    ul li:nth-child(3n) a{
-      transform:rotate(-3deg);
-      position:relative;
-      top:-5px;
-      background:#ccf;
-    }
-    ul li:nth-child(5n) a{
-      transform:rotate(5deg);
-      position:relative;
-      top:-10px;
-    }
-
-    ul li a:hover,ul li a:focus{
-      box-shadow:10px 10px 7px rgba(0,0,0,.7);
-      transform: scale(1.25);
-      position:relative;
-      z-index:5;
-      text-decoration: none;
-      color: black;
-    }
-
-    ul li{
-      margin:1em;
-    }
-  </style>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/problem.css">
 </head>
 <body>
-  <!-- partial:index.partial.html -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
@@ -88,10 +25,61 @@
 
   </div>
   <div id="main" style="text-align: center;">
-   <div class="h-100 row align-items-center mt-5" style="margin-bottom: 15em; text-align: center;">
-    <h1 style="line-height: 0.3em">What's happening in Indian Schools right now<br><span style="font-size: 12px;margin-bottom: 10px;font-style: oblique;">sans covid</span></h1><br>
+   <div class="h-100 row align-items-center mt-5" style="margin-bottom: 5em; text-align: center;">
+    <h1 style="line-height: 0.3em">What's happening to Indian students right now<br><span style="font-size: 12px;margin-bottom: 10px;font-style: oblique;">sans covid</span></h1><br>
   </div>
-  <ul>
+</div>
+<div class="flex-parent">
+  <div class="input-flex-container">
+    <div class="input">
+      <span data-year="7:00" data-info="Time to Wake Up!"></span>
+    </div>
+    <div class="input">
+      <span data-year="7:45" data-info="School Bus is here - Time to Run! And Eat!"></span>
+    </div>
+    <div class="input active">
+      <span data-year="8:20" data-info="Another day in school"></span>
+    </div>
+    <div class="input">
+      <span data-year="" data-info=""></span>
+    </div>
+    <div class="input">
+      <span data-year="" data-info=""></span>
+    </div>
+    <div class="input">
+      <span data-year="" data-info=""></span>
+    </div>
+    <div class="input">
+      <span data-year="15:20" data-info="School's out! Time to Run to Tuition!"></span>
+    </div>
+    <div class="input">
+      <span data-year="16:30" data-info="Tuition begins"></span>
+    </div>
+    <div class="input">
+      <span data-year="19:00" data-info="Tuition ends. But time to start HW now!"></span>
+    </div>
+    <div class="input">
+      <span data-year="20:30" data-info="I think I'm done with HW? "></span>
+    </div>
+  </div>
+  <div class="description-flex-container">
+    <p>And future Call of Duty players would thank them.</p>
+    <p>Because every kid should get to be Tarzan for a day.</p>
+    <p class="active">And the world rejoiced.</p>
+    <p>Because building roads is inconvenient.</p>
+    <p>Ain’t nobody got time to rake.</p>
+    <p>Because paper currency is for noobs.</p>
+    <p>Nobody likes cords. Nobody.</p>
+    <p>Brighter than glow memory.</p>
+    <p>To capitalize on an as-yet nascent market for cat photos.</p>
+    <p>Let me go out and play some basketball for a bit. <br>Oh what! It's 8:30 already??<br> I guess I'll grab some dinner and hit the bed.</p>
+  </div>
+</div>
+
+
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./script.js"></script>
+  <!-- <ul>
   <li>
     <a href="#" contenteditable="false">
       <h2>6:30 am</h2>
@@ -140,42 +128,73 @@
       <p>Text Content #8</p>
     </a>
   </li>
-</ul>
+</ul> -->
 </div>
 
 <!-- partial -->
-<script  src="../js/script.js"></script>
+<script  src="../js/problem.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-  all_notes = $("li a");
+<script type="text/javascript">
+  $(document).ready(function () {
+    all_notes = $("li a");
 
-  all_notes.on("keyup", function () {
-    note_title = $(this).find("h2").text();
-    note_content = $(this).find("p").text();
+    all_notes.on("keyup", function () {
+      note_title = $(this).find("h2").text();
+      note_content = $(this).find("p").text();
 
-    item_key = "list_" + $(this).parent().index();
+      item_key = "list_" + $(this).parent().index();
 
-    data = {
-      title: note_title,
-      content: note_content
-    };
+      data = {
+        title: note_title,
+        content: note_content
+      };
 
-    window.localStorage.setItem(item_key, JSON.stringify(data));
+      window.localStorage.setItem(item_key, JSON.stringify(data));
+    });
+
+    all_notes.each(function (index) {
+      data = JSON.parse(window.localStorage.getItem("list_" + index));
+
+      if (data !== null) {
+        note_title = data.title;
+        note_content = data.content;
+
+        $(this).find("h2").text(note_title);
+        $(this).find("p").text(note_content);
+      }
+    });
   });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    all_notes = $("li a");
 
-  all_notes.each(function (index) {
-    data = JSON.parse(window.localStorage.getItem("list_" + index));
+    all_notes.on("keyup", function () {
+      note_title = $(this).find("h2").text();
+      note_content = $(this).find("p").text();
 
-    if (data !== null) {
-      note_title = data.title;
-      note_content = data.content;
+      item_key = "list_" + $(this).parent().index();
 
-      $(this).find("h2").text(note_title);
-      $(this).find("p").text(note_content);
-    }
+      data = {
+        title: note_title,
+        content: note_content
+      };
+
+      window.localStorage.setItem(item_key, JSON.stringify(data));
+    });
+
+    all_notes.each(function (index) {
+      data = JSON.parse(window.localStorage.getItem("list_" + index));
+
+      if (data !== null) {
+        note_title = data.title;
+        note_content = data.content;
+
+        $(this).find("h2").text(note_title);
+        $(this).find("p").text(note_content);
+      }
+    });
   });
-});
-  </script>
+</script>
 </body>
 </html>
