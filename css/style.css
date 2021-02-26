@@ -72,7 +72,7 @@ main .sidebar {
   margin-left: 50px;
 }
 
-table,
+/*table,
 tr,
 td {
   border-style: none;
@@ -109,10 +109,9 @@ td.BottomRight {
   border-bottom-style: none !important;
   border-Right-style: none !important;
 }
-
+*/
 .material-icons,
-.icon-text, 
-.fa-icons {
+.icon-text{
   vertical-align: middle;
   color: white;
   font-weight: 400;
@@ -125,9 +124,24 @@ td.BottomRight {
 }
 
 .fa-icons{
-  padding-bottom: 3px;
-  margin-right: 33px;
-  /*font-size: 2em;*/
+  padding-top:3px;
+      padding-bottom: 3px;
+    margin-right: 30px;
+        vertical-align: middle;
+    color: white;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
 }
 
 /*Profile Card Start*/
