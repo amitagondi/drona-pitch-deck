@@ -111,7 +111,8 @@ td.BottomRight {
 }
 
 .material-icons,
-.icon-text {
+.icon-text, 
+.fa-icons {
   vertical-align: middle;
   color: white;
   font-weight: 400;
@@ -120,6 +121,12 @@ td.BottomRight {
 .material-icons {
   padding-bottom: 3px;
   margin-right: 30px;
+  /*font-size: 2em;*/
+}
+
+.fa-icons{
+  padding-bottom: 3px;
+  margin-right: 33px;
   /*font-size: 2em;*/
 }
 
