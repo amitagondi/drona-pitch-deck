@@ -72,7 +72,7 @@ main .sidebar {
   margin-left: 50px;
 }
 
-/*table,
+table,
 tr,
 td {
   border-style: none;
@@ -109,7 +109,7 @@ td.BottomRight {
   border-bottom-style: none !important;
   border-Right-style: none !important;
 }
-*/
+
 .material-icons,
 .icon-text{
   vertical-align: middle;
