@@ -12,26 +12,204 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel="stylesheet" href="../css/faq.css">
 	<link rel="stylesheet" href="../css/style.css">
+	<style type="text/css">
+		.lineHorizontal__container {
+			align-items: center;
+			display: flex;
+			height: 65%;
+		}
 
-</head>
-<body>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<div class="main">
+		.lineHorizontal {
+			border-top: 1px solid white;
+			border-right: 1px solid white;
+			border-left: 1px solid white;
+			transform: rotate(180deg);
+		}
+		.lineHorizontal--long0 {
+			margin-left: -12.5em;
+			width: 20%;
+			height: 5%;
+			padding-right: 10em;
+		}
 
-		<div class="chart-wrapper align-items-center">  
-		<a href="../index.html"><button style=""><i class="fa fa-long-arrow-left" aria-hidden="true"></i></button>	</a>
+		.lineHorizontal--long {
+			margin-left: 3em;
+			width: 55%;
+			height: 5%;
+		}
 
-			<h3 style="color: white; text-align: center; margin-top: 2em">todo</h3><br><br>
-			<p style="color: white; text-align: center;">Market Potential</p>
+		.lineHorizontal--long1 {
+			margin-left: 3em;
+			width: 20%;
+			height: 5%;
+		}
+		.lineHorizontal--short {
+			width: 40%;
+		}
+		.verticalChart {
+			width: 90%;
+		}
+		.verticalChart .singleBar {
+			width: 6%;
+			float: left;
+			margin-left: 0.7%;
+			margin-right: 0.7%;
+		}
+		.verticalChart .singleBar .bar {
+			position: relative;
+			height: 200px;
+			background: #79D0CE;
+			overflow: hidden;
+		}
+		.verticalChart .singleBar .bar .value {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			background: #DBEEED;
+			color: #FFECB3;
+		}
+		.verticalChart .singleBar .bar .value span {
+			position: absolute;
+			font-size: 12px;
+			bottom: 0;
+			width: 100%;
+			height: 20px;
+			color: black;
+			text-shadow: 0px -1px 0px #ffffff, 0px 1px 0px #ffffff, 1px 0px 0px #ffffff, -1px 0px 0px #ffffff, -1px -1px 0px #ffffff, -1px 1px 0px #ffffff, 1px 1px 0px #ffffff, 1px -1px 0px #ffffff;
+			display: none;
+			text-align: center;
+		}
+		.verticalChart .singleBar .title {
+			margin-top: 5px;
+			text-align: center;
+			color: white;
+		}
+
+		body {
+			display: grid;
+			overflow-x: hidden;
+			background: radial-gradient(circle at 100% 0, #fefefe, #929391);
+		}
+
+		.assembly, article {
+			transform-style: preserve-3d;
+		}
+
+		article {
+			box-sizing: border-box;
+			display: block;
+			flex-direction: column;
+			justify-content: center;
+			position: absolute;
+			padding: 0.125em;
+			width: 10em;
+			height: 10em;
+			border-radius: 50%;
+			transform: translate(-50%, -50%) rotate(calc(var(--k)*1turn)) translatey(calc(-0.125em - 100%)) rotate(calc(var(--k)*-1turn));
+			font: 1em/1.25 trebuchet ms, verdana, arial, sans serif;
+			text-align: center;
+			text-shadow: 0 0 1px #000, 1px 1px #000;
+		}
+		article:before {
+			box-sizing: inherit;
+			position: absolute;
+			top: -2.25em;
+			right: -2.25em;
+			bottom: -2.25em;
+			left: -2.25em;
+			border: solid 0.125em #fff;
+			padding: 1.25em;
+			border-radius: 50%;
+			transform: translatez(-20px) rotate(calc(var(--k)*1turn)) rotatex(calc(var(--s, -1)*1deg));
+			background: radial-gradient(#fff calc(6em - 1px), rgba(255, 255, 255, 0) 6em) currentcolor;
+			--m: linear-gradient(red, red) content-box, linear-gradient(red, red) border-box;
+			-webkit-mask: var(--m);
+			-webkit-mask-composite: xor;
+			mask: var(--m);
+			mask-composite: exclude;
+			content: "";
+		}
+
+		.article1:before {
+			border: solid 0em #fff;
+		}
+		article:nth-child(2n):before {
+			--s: 1 ;
+		}
+
+		h3 {
+			line-height: 2;
+		}
+		p{
+			font-size: 1.1em;
+		}	</style>
+	</head>
+	<body>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<div class="main">
+
+			<div class="chart-wrapper align-items-center">  
+				<a href="../index.html"><button style=""><i class="fa fa-long-arrow-left" aria-hidden="true"></i></button>	</a>
+
+				<h3 style="color: white; text-align: center; margin-top: 2em">Significant scope in schools in India and abroad</h3><br><br>
+				<p style="color: white; text-align: center;margin-top: -2em; padding-bottom: 2em">Market Potential</p>
+
+				<div class="verticalChart" style="margin-left: 10em; margin-top: 3em;">
+
+					<div class="singleBar">
+						<div class="bar">
+							<div class="value" style="height: 68%;">
+								<span style="color: rgb(45, 137, 239); display: inline;">68% Govt</span>
+							</div>
+						</div>
+						<div class="title">Rural</div>
+					</div>
+					<div class="singleBar">
+						<div class="bar">
+							<div class="value" style="height: 39%;">
+								<span style="color: rgb(45, 137, 239); display: inline;">39% Govt</span>
+							</div>
+						</div>
+						<div class="title">Urban</div>
+					</div>
+				</div>
+				<div class="line ">
+					<article style="color: white; margin-left: 30em; margin-top: 2em">
+						<h3>1 Million</h3>
+						<p> Government Schools</p>
+					</article>
+					<article style="color: white; margin-left: 48em; margin-top: 2em">
+						<h3>600,000</h3>
+						<p>Private Schools</p>
+					</article>
+					<article style="color: #d53e4f; margin-left: 68em; margin-top: 2em; padding: 0" class="article1">
+						<h3>113,000</h3>
+						<p>Schools following syllabi same/similar to India</p>
+					</article>
+				</div>
+				<div class="lineHorizontal__container" style="padding-bottom: 1em">
+					<div class="lineHorizontal lineHorizontal--long0"></div><br>
+					<div class="lineHorizontal lineHorizontal--long"></div>
+					<div class="lineHorizontal lineHorizontal--long1"></div><br>
+				</div>
+
+				<span style="color: white; position: absolute; top: 65.5%; left: 10.7%">Distribution of government <br>and public schools in India</span>
+				<span style="color: white; position: absolute; top: 65.5%; left: 46.5%">In India</span>
+				<span style="color: white; position: absolute; top: 65.5%; left: 77.5%">Looking Global</span>
+
+
+			</div>
+			<!-- partial -->
+
 		</div>
-	</div>
-	<a href=""><button onclick='replay()' style="margin-left: 2em; position: absolute;top: 90%">Activity composition of teachers</button>
-	<a href="faq-tuition-reasons.html"><button onclick='replay()' style="margin-left: 2em; position: absolute;top: 90%; left: 25%">Reasons for attending tuition</button></a>
-	<a href="faq-spending.html"><button onclick='replay()' style="margin-left: 2em; position: absolute;top: 90%; left: 47%">Spending before and after Drona</button></a>
-	<a href="faq-market.html"><button onclick='replay()' style="margin-left: 2em; position: absolute;top: 90%; left: 71%">Market Potential</button></a>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script>
-<!-- 	<script  src="../js/faq.js"></script> -->
-	<script  src="../js/script.js"></script>
+		<a href="faq.html"><button onclick='replay()' style="margin-left: 7em; position: absolute;top: 90%">Activity composition of teachers</button>
+			<a href="faq-tuition-reasons.html"><button onclick='replay()' style="margin-left: 7em; position: absolute;top: 90%; left: 25%">Reasons for attending tuition</button></a>
+			<a href="faq-spending.html"><button onclick='replay()' style="margin-left: 7em; position: absolute;top: 90%; left: 47%">Spending before and after Drona</button></a>
+			<a href="faq-market.html"><button onclick='replay()' style="margin-left: 7em; position: absolute;top: 90%; left: 71%">Market Potential</button></a>
+			<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script>
+			<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+			<!-- 	<script  src="../js/faq.js"></script> -->
+			<script  src="../js/script.js"></script>
 
-</body>
-</html>
+		</body>
+		</html>

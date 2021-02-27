@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../css/timeline.css">
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   <script src="https://use.fontawesome.com/2d0b7a6e28.js"></script>
+
 </head>
 <body>
   <!-- partial:index.partial.html -->
@@ -35,15 +36,15 @@
         <!--first section-->
         <div class="row align-items-center how-it-works d-flex">
           <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
-            <div class="circle font-weight-bold">1</div>
+            <div class="circle font-weight-bold" >1</div>
           </div>
-          <div class="col-6">
-            <h5>Year #0</h5>
-            <p style="font-weight: 400">
+          <div class="col-6" >
+            <h5 onclick="show0()" >Year #0</h5>
+            <p style="font-weight: 400; display: block;" class="data0">
               User and Market Research<br>
               Initial prototyping during Yale Launchpad<br>
-            MVP Development - Mobile Responsive website<br>
-           Collaboration with two schools to tailor the product</p>
+              MVP Development - Mobile Responsive website<br>
+            Collaboration with two schools to tailor the product</p>
           </div>
         </div>
         <!--path between 1-2-->
@@ -61,10 +62,10 @@
         <!--second section-->
         <div class="row align-items-center justify-content-end how-it-works d-flex">
           <div class="col-6 text-right">
-            <h5>Year #1</h5>
-            <p style="font-weight: 400">
+            <h5 onclick="show1()">Year #1</h5>
+            <p style="font-weight: 400; display: none" class="data1">
              Beta testing with two schools<br>
-          Seed investment round </p>
+           Seed investment round </p>
 
          </div>
          <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center"  style="margin-left: 0.2em;">
@@ -89,19 +90,44 @@
           <div class="circle font-weight-bold">3</div>
         </div>
         <div class="col-6">
-          <h5>Year #2</h5>
-          <p style="font-weight: 400">
+          <h5 onclick="show2()">Year #2</h5>
+          <p style="font-weight: 400; display: none" class="data2">
             Offer services for free for first semester to attract private schools<br>
-Leverage our network across 12 states to get government contracts (low margins, high volume)
-            </p>
+            Leverage our network across 12 states to get government contracts (low margins, high volume)
+          </p>
         </div>
       </div>
 
+    </div>
+
   </div>
-
-</div>
-
-<!-- partial -->
+  <script type="text/javascript">
+    function show0() {
+      var x = document.getElementsByClassName("data0")[0];
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function show1() {
+      var x = document.getElementsByClassName("data1")[0];
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function show2() {
+      var x = document.getElementsByClassName("data2")[0];
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+  <!-- partial -->
 </body>
 </html>
 

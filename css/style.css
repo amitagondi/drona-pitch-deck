@@ -14,24 +14,7 @@ body {
 .fa-angle-double-down:hover{
   text-decoration: none;
 }
-.logo{
-  background: url('../safari-pinned-tab.svg');
-    height: 1em;
-    width: 1em;
-    display: block;
-    /* Other styles here */
-}
 
-.logo-1 {
-    background: url('../img/logo-1.ico');
-    color: white;
-      height:200px;
-    width: 100px;
-    display: block;
-
-    margin-bottom: 0.5em;
-    /* Other styles here */
-}
 
 .sidebar {
   height: 100%;
