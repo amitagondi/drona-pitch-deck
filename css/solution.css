@@ -21,7 +21,7 @@ section:nth-child(1) {
   background: white;
 }
 section:nth-child(2) {
-  background: #F64747;
+  background: #9B59B6;
 }
 section:nth-child(3) {
   background: #22A7F0;
@@ -30,7 +30,8 @@ section:nth-child(4) {
   background: #F9690E;
 }
 section:nth-child(5) {
-  background: #9B59B6;
+  background: #F64747;
+  
 }
 section:nth-child(6) {
   background: #03C9A9;
@@ -51,7 +52,7 @@ section:nth-child(7) {
   margin: 0 0 100px 30px;
 }
 .nav__counter {
-  font-size: 22px;
+  font-size: 16px;
   transition: all 0.15s ease-out;
 }
 .nav__title {
@@ -67,7 +68,6 @@ section:nth-child(7) {
 .nav__body {
   font-weight: 100;
   font-size: 18px;
-  font-size: 18px;
   width: 300px;
   height: 0;
   overflow: hidden;
@@ -77,7 +77,7 @@ section:nth-child(7) {
 .nav li {
   position: relative;
   transition: all 0.3s ease-out;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 .nav li:after {
   content: "";
@@ -92,7 +92,7 @@ section:nth-child(7) {
 }
 .nav li a {
   display: block;
-  padding-bottom: 0px;
+  padding-top: 0px;
   color: #fff;
   transition: all 0.15s ease-out;
 }
