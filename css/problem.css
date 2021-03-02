@@ -298,3 +298,73 @@ h1 span {
     min-height: 950px;
   }
 }
+
+main {
+  max-width: 800px;
+  margin: auto;
+}
+/*INFORGRAPHIC*/
+.infographic {
+  margin: 32px 0;
+}
+.infographic__title {
+  color: #545454;
+  font-size: 20px;
+  text-transform: uppercase !important;
+  text-align: center;
+}
+.infographic__grid {
+  display: flex;
+  margin: 20px 0;
+}
+.infographic__grid__item {
+  width: calc(33.33% + 10px);
+  padding: 18px;
+}
+.infographic__grid__item__img {
+  display: block;
+  margin: auto;
+  width: 175px;
+}
+.infographic__grid__item__title {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center !important;
+  width: 100%;
+  margin: 0;
+}
+.title-dkblue {
+  color: #00bce4 !important;
+}
+.title-orange {
+  color: #fe8d0b !important;
+}
+.title-ltblue {
+  color: #003A79 !important;
+}
+p.infographic__grid__item__p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+/*...infographic sources*/
+p.infographic__sources {
+  color: #545454;
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+@media screen and (max-width: 695px) {
+  .infographic__grid {
+    flex-direction: column;
+  }
+  .infographic__grid__item {
+    width: calc(100% - 16px);
+  }
+}
