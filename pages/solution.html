@@ -7,6 +7,26 @@
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700'>
   <link rel="stylesheet" type="text/css" href="../css/solution.css">
+  <link rel="stylesheet" type="text/css" href="../css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="../css/fontawesome.min.css">
+  <script type="text/javascript">
+    // SMOOTH SCROLLING SECTIONS
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+           $('html,body').animate({
+               scrollTop: target.offset().top
+           }, 1000);
+           return false;
+       }
+   }
+});
+</script>
+
 
 </head>
 <body>
@@ -34,28 +54,31 @@
                 <li role="presentation">
                   <a href="#section2">
                     <span class="nav__counter">Plan lessons</span>
-                    <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+                    <p class="nav__body">
+                        <!-- <i class="fa fa-plus" aria-hidden="true" style="transform: rotate(45deg);"> </i> Losing <i class="fa fa-clock"></i> scouring the internet<br> 
+                        <i class="fa fa-check" aria-hidden="true"></i> -->Our team of teachers identify <b>engaging diagrams & videos</b> for teachers to use for class.<br>Either choose or add your own.
+                    </p>
                 </a>
             </li>
 
             <li role="presentation">
               <a href="#section3">
                 <span class="nav__counter">Post Chapter Quiz</span>
-                <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+                <p class="nav__body">Adaptive quiz to gauge student's conceptual understanding of each topic in a chapter.</p>
             </a>
         </li>
 
         <li role="presentation">
           <a href="#section4">
             <span class="nav__counter">Automated<br>Grading</span>
-            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+            <p class="nav__body"><b>Preliminary grading </b>to save teachers time. So they scan the corrected answers, instead of spending hours on grading.</p>
         </a>
     </li>
 
     <li role="presentation">
       <a href="#section5">
         <span class="nav__counter">Exam Insights</span>
-        <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+        <p class="nav__body">Teacher upload the exam paper.<br> Students scan corrected sheet. <br>Actionable insights generated</p>
     </a>
 </li>
 
@@ -170,7 +193,7 @@
 </section>
 
 <section class="section section6" id="section6">
-  Where we want to grow
+  <!-- Where we want to grow -->
 </section>
 
 
@@ -179,23 +202,6 @@
 <!-- partial -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
-<script type="text/javascript">
-    // SMOOTH SCROLLING SECTIONS
-    $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-            || location.hostname == this.hostname) {
-
-            var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-           $('html,body').animate({
-               scrollTop: target.offset().top
-           }, 1000);
-           return false;
-       }
-   }
-});
-</script>
 
 <!-- partial -->
 <script  src="../js/script.js"></script>
