@@ -30,14 +30,20 @@ section:nth-child(4) {
   background: #03C9A9;
   
 }
-section:nth-child(5) {
+/*section:nth-child(5) {
   background: #ffcc00;
+}*/
+section:nth-child(5) {
+  background: #f27f35;
 }
 section:nth-child(6) {
-  background: #F9690E;
-}
-section:nth-child(7) {
   background: #F64747;
+  background: #f05656;
+}
+
+
+section:nth-child(7){
+  background: #68718F;
 }
 
 .nav>li>a {
