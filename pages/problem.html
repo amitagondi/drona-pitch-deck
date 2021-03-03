@@ -29,7 +29,7 @@
   <div id="main" style="text-align: center;background-color: rgba(248, 249, 245, 1);">
    <div class="row align-items-center mt-3" style="margin-bottom: 7em; margin-left: 28em; text-align: center;">
     <!-- What life was like in Jan 2020 -->
-    <h1 style="line-height: 0.3em; text-align:center;">What life was in Jan 2020<br><span style="font-size: 12px;margin-bottom: 10px;font-style: oblique;">sans covid</span></h1><br>
+    <h1 style="line-height: 0.4em; text-align:center;">What life was in Jan 2020<br><span style="font-size: 12px;margin-bottom: 10px;font-style: oblique;">sans covid</span></h1><br>
   </div>
   <div class="flex-parent" style="margin-bottom: 25em">
     <div class="input-flex-container" id="first">
@@ -39,7 +39,7 @@
       <div class="input">
         <span data-year="7:45" data-info="School Bus is here - Time to Run! And Eat!"></span>
       </div>
-      <div class="input active">
+      <div class="input active" onclick="showabc()">
         <a href="../img/school.jpg" target="_blank" style="text-decoration: none; color: black"><span data-year="8:20" data-info="Another day in school"></span></a>
       </div>
       <div class="input">
@@ -69,7 +69,7 @@
         <div class="infographic__grid">
 
           <!---->
-          <div class="infographic__grid__item">
+          <div class="infographic__grid__item  img1" onclick="show()" style="opacity: 0">
             <img
             src="../img/teacher2.png"
             class="infographic__grid__item__img" style="border:5px solid #fe8d0b; border-radius: 60%; padding: 1em; width: 200px">
@@ -77,46 +77,25 @@
             <p class="infographic__grid__item__p">forced to resort to one-size-fits-all teaching</p>
           </div>
           <!---->
-          <div class="infographic__grid__item">
+          <div class="infographic__grid__item img2" style="opacity: 0" onclick="show1()">
             <img
             src="../img/teacher3.png"
-            class="infographic__grid__item__img" style="border:5px solid #003A79; border-radius: 60%; padding: 1em; width: 200px; height: 180px">
+            class="infographic__grid__item__img " style="border:5px solid #003A79; border-radius: 60%; padding: 1em; width: 200px; height: 180px; ">
             <h2 class="infographic__grid__item__title title-ltblue">2/3 of teacher time</h2>
             <p class="infographic__grid__item__p">spent with grading and administrative tasks</p>
           </div>
-          <div class="infographic__grid__item" >
+          <div class="infographic__grid__item img3" style="opacity: 0" onclick="show2()">
             <img
             src="../img/student1.png"
-            class="infographic__grid__item__img" style="border:5px solid #00bce4; border-radius: 50%;width: 180px">
+            class="infographic__grid__item__img " style="border:5px solid #00bce4; border-radius: 50%;width: 180px; ">
             <h2 class="infographic__grid__item__title title-dkblue">8 out of 10 </h2>
             <p class="infographic__grid__item__p">Indian students goes to after-school tuition</p>
           </div>
         </div>
       </div>
     </main>
+  </div>
 
-    <!-- <div class="description-flex-container">
-      <p>And future Call of Duty players would thank them.</p>
-      <p>Because every kid should get to be Tarzan for a day.</p>
-      <p class="active">And the world rejoiced?</p>
-      <p>Social Science. Period 1. <br> History Class but we have one of the students reciting the textbook. <br>The entire time.</p>
-      <p><a href="../img/school.jpg" target="_blank" style="text-decoration: none; color: black">Science with the dreaded Pranin ma'am.</a></p>
-      <p>Science Class. What else should we write here!</p>
-      <p>School bus home quick. Run home. <br>Change out of the hideous school uniform. <br>And now...</p>
-      <p>Brighter than glow memory.</p>
-      <p>To capitalize on an as-yet nascent market for cat photos.</p>
-      <p>Let me go out and play some basketball for a bit. <br>Oh what! It's 8:30 already??<br> I guess I'll grab some dinner and hit the bed.</p>
-    </div> -->
-  </div>
-<!-- <script type="text/javascript">// Bouncing arrow bottom of full screen
-$(window).scroll(function(){
-  $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250); 
-});</script>
-<div class="row" style="padding-left: 50%; padding-bottom: 10%">
-  <div class="arrow bounce" style="padding-top:10%; text-align: center">
-    <a class="fa fa-angle-double-down" style="font-size: 3vw; color: rgb(0,0,0,0.05)"aria-hidden="true"   href="#ideal"></a>
-  </div>
-</div>  -->
 </div>
 <!-- What life should be like in Jan 2022 -->
 <div class="flex-parent" id="ideal">
@@ -243,12 +222,63 @@ $(window).scroll(function(){
   });
 </script>
 <script type="text/javascript">
+  function showabc() {
+    console.log("hi");
+    var x = document.getElementsByClassName("img1")[0];
+    var y = document.getElementsByClassName("img2")[0];
+    var z = document.getElementsByClassName("img3")[0];
+    x.style.opacity = 1.0;
+    y.style.opacity = 0.4;
+    z.style.opacity = 0.4;
+  }
+
   function show0() {
     var x = document.getElementsByClassName("data0")[0];
     if (x.style.visibility === "collapse") {
       x.style.visibility = "visible";
     } else {
       x.style.visibility = "hidden";
+    }
+  }
+
+  function show() {
+    var x = document.getElementsByClassName("img1")[0];
+    var y = document.getElementsByClassName("img1")[0];
+    var z = document.getElementsByClassName("img3")[0];
+    console.log(x.style.opacity);
+    if (x.style.opacity === '0.4' || x.style.opacity === '0') {
+      x.style.opacity = 1.0;
+       y.style.opacity = 0.4;
+      z.style.opacity = 0.4;
+    } else {
+      x.style.opacity = 0.4;
+    }
+  }
+
+  function show1() {
+    var x = document.getElementsByClassName("img2")[0];
+    var y = document.getElementsByClassName("img1")[0];
+    var z = document.getElementsByClassName("img3")[0];
+    console.log(x.style.opacity);
+    if (x.style.opacity === '0.4') {
+      x.style.opacity = 1.0;
+      y.style.opacity = 0.4;
+      z.style.opacity = 0.4;
+    } else {
+      x.style.opacity = 0.4;
+    }
+  }
+
+  function show2() {
+    var x = document.getElementsByClassName("img3")[0];
+    var y = document.getElementsByClassName("img1")[0];
+    var z = document.getElementsByClassName("img2")[0];
+    if (x.style.opacity === '0.4') {
+      x.style.opacity = 1.0;
+      y.style.opacity = 0.4;
+      z.style.opacity = 0.4;
+    } else {
+      x.style.opacity = 0.4;
     }
   }
 </script>
