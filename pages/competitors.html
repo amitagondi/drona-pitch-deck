@@ -99,21 +99,31 @@
             <div style=" margin-top: 2em">
              <span style="text-align: left;"><i class="fa fa-check" aria-hidden="true"></i> Oldest in industry, strong customer base</span><br><br>
              <span style="text-align: left; margin-top: 3em"><i class="fa fa-plus" aria-hidden="true" style="transform: rotate(45deg);"></i> Limited services - no learning continuity outside class.</span><br><br>
-             <button style="opacity: 0.05">Click me</button>
+             <button style="opacity: 0.05" onclick="show0()">Click me</button>
              <!-- <span style="text-align: left; margin-top: 3em"><i class="fa fa-lightbulb-o"></i>  A wide range of products offered to schools based on size, budget and syllabus. </span> -->
            </div>
          </p>
        </div>
-       <!-- <div class="row">
-        <h1 style="text-align: center; margin-left: 18em">hi</h1>
-       </div> -->
-     </div>
-   </div>
- </div>
+       <div class="row">
+        <h3 style="text-align: center; margin-left: 10em; display: none;" class="data0">Drona's Differentiator:<br> Enhancing the feedback loop between teachers and students</h3>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
 <!-- partial -->
 <script  src="../js/script.js"></script>
+<script type="text/javascript">
+  function show0() {
+    var x = document.getElementsByClassName("data0")[0];
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
 
 </body>
 </html>
