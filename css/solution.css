@@ -22,12 +22,15 @@ section:nth-child(1) {
 }
 section:nth-child(2) {
   background: #9B59B6;
+  background: #560bad;
 }
 section:nth-child(3) {
   background: #22A7F0;
+  background: #480ca8;
 }
 section:nth-child(4) {
   background: #03C9A9;
+  background: #3a0ca3;
   
 }
 /*section:nth-child(5) {
@@ -35,10 +38,12 @@ section:nth-child(4) {
 }*/
 section:nth-child(5) {
   background: #f27f35;
+  background: #3f37c9;
 }
 section:nth-child(6) {
   background: #F64747;
   background: #f05656;
+  background: #433bd1;
 }
 
 
