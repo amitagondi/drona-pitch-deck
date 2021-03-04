@@ -99,9 +99,9 @@
 </div>
 <!-- What life should be like in Jan 2022 -->
 <div class="flex-parent" id="ideal">
-  <h1 style="text-align: center;" onclick="show0()">What life should be like in Jan 2022</h1>
-  <p style="font-size: 25px; margin-bottom: 7em; visibility: collapse;" class="data0">Our mission: Giving two hours of each student’s life back. Every day. 
-  </p>
+  <h1 style="text-align: center;" onclick="show0()" class="title-ideal">What life should be like in Jan 2022</h1>
+  <h1 style="font-size: 40px; margin-bottom: 3em; visibility: collapse;" class="data0"><b>Our mission</b><br> Giving two hours of each student’s life back. Every day. 
+  </h1>
   <div class="input-flex-container" id="second">
     <div class="input1">
       <span data-year="7:00" data-info="Time to Wake Up!"></span>
@@ -234,8 +234,13 @@
 
   function show0() {
     var x = document.getElementsByClassName("data0")[0];
+    var y = document.getElementById("second");
+    var z = document.getElementsByClassName("title-ideal")[0];
     if (x.style.visibility === "collapse") {
+      x.style.padding = "0px 10px 150px 30px";
       x.style.visibility = "visible";
+      y.style.display = "none";
+      z.style.display = "none";
     } else {
       x.style.visibility = "hidden";
     }

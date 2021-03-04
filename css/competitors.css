@@ -1,7 +1,7 @@
 .box{
 	height: 20px;
   width: 330px;
-  background-color: #f4f4f4;
+  background-color: #f0ebeb;
   z-index: 1;
   position: relative;
 }
